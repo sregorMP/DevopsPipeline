@@ -1,0 +1,18 @@
+---
+- hosts: deploy 
+  
+  tasks: 
+  - name: create image
+    command: docker build -t devops-image .
+    args:
+      chdir: /home/userdevops/docker
+
+  - name: create tag
+    command: docker tag devops-image sregor/devops-image:latest
+   
+  - name: push image dockerhub
+    command: docker push sregor/devops-image:latest
+
+  - name: remove docker images
+    command: docker image rm devops-image sregor/devops-image
+    ignore_errors: yes

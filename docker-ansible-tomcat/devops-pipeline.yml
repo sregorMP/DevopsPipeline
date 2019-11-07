@@ -1,0 +1,20 @@
+---
+- hosts: web
+  tasks:
+  - name: stop containers
+    command: docker container stop devops-container
+    ignore_errors: yes
+
+  - name: remove containers
+    command: docker container rm devops-container
+    ignore_errors: yes
+
+  - name: remove current docker image
+    command: docker image rm sregor/devops-image:latest
+    ignore_errors: yes
+  
+  - name: pull image 
+    command: docker pull sregor/devops-image:latest 
+  
+  - name: creating docker image
+    command: docker container run -d --name devops-container -p 8080:8080 sregor/devops-image:latest
