@@ -4,6 +4,10 @@ MAINTAINER Rogers Machado Paiva
 
 USER root
 
+ENV M2=/opt/maven/apache-maven/bin
+ENV M2_HOME=/opt/maven/apache-maven
+ENV PATH=$PATH:$M2_HOME:$M2
+
 RUN mkdir -p /opt/maven && \ 
     cd /opt/maven && \ 
     wget http://ftp.unicamp.br/pub/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz && \
