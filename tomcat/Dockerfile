@@ -1,5 +1,7 @@
 FROM openjdk:14-jdk-alpine
 
+MAINTAINER Rogers Machado Paiva
+
 ENV PATH=$PATH:/opt/apache-tomcat-8.5.47/bin/
 
 RUN cd /opt && \
