@@ -6,7 +6,7 @@
     ignore_errors: yes
 
   - name: remove current docker image
-    command: docker image rm sregor/devops-image:latest
+    command: docker image rm -f sregor/devops-image:latest
     ignore_errors: yes
   
   - name: pull image docker hub 

@@ -5,7 +5,7 @@
   - name: create image
     command: docker build -t devops-image .
     args:
-      chdir: /home/userdevops/docker
+      chdir: /home/devopsuser/DevopsPipeline/ansible
 
   - name: create tag
     command: docker tag devops-image sregor/devops-image:latest
@@ -14,5 +14,5 @@
     command: docker push sregor/devops-image:latest
 
   - name: remove docker images
-    command: docker image rm devops-image sregor/devops-image
+    command: docker image rm -f devops-image sregor/devops-image
     ignore_errors: yes
