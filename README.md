@@ -5,7 +5,7 @@
 * 3 instances Swarm Server (1 Manager, 2 Workers) 
 (This example i'm using centos)
 
-![PipelineExample](https://github.com/sregorMP/DevopsPipeline/blob/master/pipe.png)
+![PipelineExample](https://github.com/sregorMP/DevopsPipeline/blob/master/pipeimage.png)
 
 # Configuration Commons Servers
 ## Install Docker and git 
