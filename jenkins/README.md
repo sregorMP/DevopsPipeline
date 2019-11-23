@@ -39,7 +39,7 @@ docker exec -ti myJenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 ### Configuration Job
 
-`Go to Source Code Management`  > `Select Git` > `Repository URL` > `Input: https://github.com/sregorMP/helloWorld.git `
+`Go to Source Code Management`  > `Select Git` > `Repository URL` > `Input: https://github.com/sregorMP/HelloWorldMavenJavaWeb.git `
 
 `Build Triggers`  > `Select Pool SCM` > `Type: * * * * * `
 
