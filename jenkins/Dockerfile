@@ -10,8 +10,8 @@ ENV PATH=$PATH:$M2_HOME:$M2
 
 RUN mkdir -p /opt/maven && \ 
     cd /opt/maven && \ 
-    wget http://ftp.unicamp.br/pub/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz && \
-    tar -xzvf apache-maven-3.6.2-bin.tar.gz && \
-    mv apache-maven-3.6.2 apache-maven 
+    wget https://ftp.unicamp.br/pub/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz && \
+    tar -xzvf apache-maven-3.8.1-bin.tar.gz && \
+    mv apache-maven-3.8.1 apache-maven 
 
 USER jenkins
